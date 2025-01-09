@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 설치 및 실행 방법
 
-## Getting Started
+### 1. 저장소 클론
 
-First, run the development server:
+터미널에서 다음 명령을 실행하여 저장소를 클론합니다.
+
+```bash
+git clone <저장소 URL>
+cd <프로젝트 폴더>
+```
+
+## 2. 의존성 설치
+
+필요한 모든 패키지를 설치합니다.
+
+```bash
+npm install
+```
+
+위 명령은 `package.json`에 명시된 모든 의존성을 설치합니다. 주요 패키지는 다음과 같습니다:
+- next
+- react
+- react-dom
+- lucide-react
+- swiper
+
+## 3. 개발 서버 실행
+
+다음 명령을 실행하여 개발 서버를 시작합니다.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+터미널에 표시된 URL (보통 [http://localhost:3000](http://localhost:3000))로 브라우저를 열면 애플리케이션을 확인할 수 있습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 추가 정보
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**프로젝트 구조**:  
+소스 코드는 Next.js App Router 구조를 따르며, 페이지 컴포넌트는 `app` 폴더 아래에 위치합니다.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**정적 자산**:  
+이미지 및 기타 정적 파일은 `public/assets` 폴더에 위치합니다.
